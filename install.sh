@@ -7,7 +7,7 @@ sudo apt-get remove docker docker-engine docker.io
 
 sudo apt-get update
 
-sudo apt-get install \
+sudo apt-get install -y \
     linux-image-extra-$(uname -r) \
     linux-image-extra-virtual \
     apt-transport-https \
@@ -24,6 +24,6 @@ sudo add-apt-repository \
    stable"
 
 sudo apt-get update
-sudo apt-get install docker-ce
+sudo apt-get install -y docker-ce
 
 echo "git installed!"
